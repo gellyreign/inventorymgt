@@ -1,0 +1,698 @@
+
+
+
+/*-- Reset Code --*/
+
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+	article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+	ol,ul{list-style:none;padding:0;margin:0;}
+	blockquote,q{quotes:none;}
+	blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+	table{border-collapse:collapse;border-spacing:0;}
+	a{text-decoration:none;}
+	.txt-rt{text-align:right;}
+	.txt-lt{text-align:left;}
+	.txt-center{text-align:center;}
+	.float-rt{float:right;}
+	.float-lt{float:left;}
+	.clear{clear:both;}
+	.pos-relative{position:relative;}
+	.pos-absolute{position:absolute;}
+	.vertical-base{vertical-align:baseline;}
+	.vertical-top{vertical-align:top;}
+	.underline{	padding-bottom:3px;	border-bottom: 1px solid #eee;}
+	nav.vertical ul li{display:block;}
+	nav.horizontal ul li{display: inline-block;}
+	img{max-width:100%;}
+
+/*-- Reset Code --*/
+
+@font-face {
+    font-family: 'jockey_oneregular';
+    src: url("../css/webfont/jockeyone-regular-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-- Index-Page-Styling --*/
+
+body {
+	
+
+	font-family: 'jockey_oneregular';
+    text-align: center;
+    background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+h1 {
+	
+    position: absolute;
+	width: 527px;
+	height: 125px;
+	left: 640px;
+	top: 177px;
+
+	font-family: 'jockey_oneregular';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 75px;
+	line-height: 150%;
+/* or 112px */
+
+	text-align: center;
+
+	color: #FFFFFF
+
+}
+h2 {
+
+   	position: absolute;
+width: 328px;
+height: 78px;
+left: -60px;
+top: -20px;
+
+
+
+font-family: 'jockey_oneregular';
+font-style: normal;
+font-weight: 400;
+font-size: 75px;
+line-height: 150%;
+/* or 112px */
+
+text-align: center;
+
+color: #FFF;
+}
+h3{
+	position: absolute;
+width: 333px;
+height: 14px;
+left: -20px;
+top: 270px;
+padding-top: 10px;
+
+font-family: 'jockey_oneregular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+h3:hover{
+  color: #e2f3f5;
+}
+h4 {
+
+   	position: absolute;
+width: 328px;
+height: 78px;
+left: -30px;
+top: -20px;
+
+
+
+font-family: 'jockey_oneregular';
+font-style: normal;
+font-weight: 400;
+font-size: 75px;
+line-height: 150%;
+/* or 112px */
+
+text-align: center;
+
+color: #FFF;
+}
+.container {
+position: absolute;
+width: 343px;
+height: 375px;
+left: 191px;
+top: 173px;
+
+background: rgba(0, 0, 0, 0.6);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container2 {
+position: absolute;
+width: 343px;
+height: 500px;
+left: 191px;
+top: 173px;
+
+background: rgba(0, 0, 0, 0.6);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.login {
+    width: 45%;
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+	padding-top: 100px;
+	left: 100px;
+	top: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+.register {
+    width: 45%;
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+	padding-top: 100px;
+	left: 100px;
+	top: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+
+
+input[type="text"], input[type="password"] {
+    width: 93.4%;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: left;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+}
+
+.send-button {
+    margin-bottom: 20px;
+	border: #fff;
+    border-width: 2px;
+}
+
+.send-button input[type="submit"] {
+    width: 60%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 100;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    outline: none;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+    text-decoration: none;
+}
+
+.send-button input[type="submit"]:hover {
+    background-color: #fff;
+    border: 1px solid #0e153a;
+    color: #0e153a;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+    text-decoration: none;
+}
+
+
+.register {
+    width: 44%;
+    float: left;
+    border-left: 1px solid #DDD;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.register p {
+    color: #CCC;
+    margin-bottom: 10px;
+}
+
+.register p a {
+    color: #CCC;
+}
+
+.register p a:hover {
+    color: #FFF;
+}
+.sidesettings{
+position: absolute;
+width: 351px;
+height: 1024px;
+
+
+/*-- Reset Code --*/
+
+	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+	article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+	ol,ul{list-style:none;padding:0;margin:0;}
+	blockquote,q{quotes:none;}
+	blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+	table{border-collapse:collapse;border-spacing:0;}
+	a{text-decoration:none;}
+	.txt-rt{text-align:right;}
+	.txt-lt{text-align:left;}
+	.txt-center{text-align:center;}
+	.float-rt{float:right;}
+	.float-lt{float:left;}
+	.clear{clear:both;}
+	.pos-relative{position:relative;}
+	.pos-absolute{position:absolute;}
+	.vertical-base{vertical-align:baseline;}
+	.vertical-top{vertical-align:top;}
+	.underline{	padding-bottom:3px;	border-bottom: 1px solid #eee;}
+	nav.vertical ul li{display:block;}
+	nav.horizontal ul li{display: inline-block;}
+	img{max-width:100%;}
+
+/*-- Reset Code --*/
+
+@font-face {
+    font-family: 'jockey_oneregular';
+    src: url("../css/webfont/jockeyone-regular-webfont.woff");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/*-- Index-Page-Styling --*/
+
+body {
+	
+
+	font-family: 'jockey_oneregular';
+    text-align: center;
+    background: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+
+h1 {
+	
+    position: absolute;
+	width: 527px;
+	height: 125px;
+	left: 640px;
+	top: 177px;
+
+	font-family: 'jockey_oneregular';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 75px;
+	line-height: 150%;
+/* or 112px */
+
+	text-align: center;
+
+	color: #FFFFFF
+
+}
+h2 {
+
+   	position: absolute;
+width: 328px;
+height: 78px;
+left: -60px;
+top: -20px;
+
+
+
+font-family: 'jockey_oneregular';
+font-style: normal;
+font-weight: 400;
+font-size: 75px;
+line-height: 150%;
+/* or 112px */
+
+text-align: center;
+
+color: #FFF;
+}
+h3{
+	position: absolute;
+width: 333px;
+height: 14px;
+left: -20px;
+top: 270px;
+padding-top: 10px;
+
+font-family: 'jockey_oneregular';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+
+color: #FFFFFF;
+
+}
+h3:hover{
+  color: #e2f3f5;
+}
+h4 {
+
+   	position: absolute;
+width: 328px;
+height: 78px;
+left: -30px;
+top: -20px;
+
+
+
+font-family: 'jockey_oneregular';
+font-style: normal;
+font-weight: 400;
+font-size: 75px;
+line-height: 150%;
+/* or 112px */
+
+text-align: center;
+
+color: #FFF;
+}
+.container {
+position: absolute;
+width: 343px;
+height: 375px;
+left: 191px;
+top: 173px;
+
+background: rgba(0, 0, 0, 0.6);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container2 {
+position: absolute;
+width: 343px;
+height: 500px;
+left: 191px;
+top: 173px;
+
+background: rgba(0, 0, 0, 0.6);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.login {
+    width: 45%;
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+	padding-top: 100px;
+	left: 100px;
+	top: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+.register {
+    width: 45%;
+    float: left;
+    text-align: left;
+    padding-left: 50px;
+	padding-top: 100px;
+	left: 100px;
+	top: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+}
+
+:-moz-placeholder {
+    color: #fff;
+}
+
+::-moz-placeholder {
+    color: #fff;
+}
+
+:-ms-input-placeholder {
+    color: #fff;
+}
+
+
+
+input[type="text"], input[type="password"] {
+    width: 93.4%;
+    margin-bottom: 20px;
+    padding: 10px;
+    float: left;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid #fff;
+    outline: none;
+    color: #fff;
+}
+
+.send-button {
+    margin-bottom: 20px;
+	border: #fff;
+    border-width: 2px;
+}
+
+.send-button input[type="submit"] {
+    width: 60%;
+    padding: 10px 0;
+    font-size: 16px;
+    font-weight: 100;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    cursor: pointer;
+    outline: none;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+    text-decoration: none;
+}
+
+.send-button input[type="submit"]:hover {
+    background-color: #fff;
+    border: 1px solid #0e153a;
+    color: #0e153a;
+    transition:0.5s all;
+    -webkit-transition:0.5s all;
+    -moz-transition:0.5s all;
+    -o-transition:0.5s all;
+    -ms-transition:0.5s all;
+    text-decoration: none;
+}
+
+
+.register {
+    width: 44%;
+    float: left;
+    border-left: 1px solid #DDD;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.register p {
+    color: #CCC;
+    margin-bottom: 10px;
+}
+
+.register p a {
+    color: #CCC;
+}
+
+.register p a:hover {
+    color: #FFF;
+}
+.sidesettings{
+position: absolute;
+width: 351px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: #0E153A;
+}
+
+.footer {
+    text-align: center;
+    margin: 100px 20px 20px;
+}
+.footer p {
+    color: #CCC;
+    line-height: 25px;
+    /*--w3layouts--*/
+    /*--agileits--*/
+}
+.footer a {
+    color: #CCC;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #FFF;
+}
+
+/*-- Index-Page-Styling --*/
+
+
+
+
+
+
+
+
+
+/*--- Responsive Code ---*/
+
+
+
+
+
+#Category{
+ width:50%;
+ color: rgb(255, 255, 255);
+ text-align: center;
+ background: transparent;
+ border: transparent;
+
+}
+
+
+
+
+/*--- Responsive Code ---*/
+
+left: 0px;
+top: 0px;
+
+background: #0E153A;
+}
+
+/* UI set (1) 1 */
+
+.admin-prof{
+position: center;
+width: 312px;
+height: 316px;
+left: 22px;
+top: 68px;
+
+background: url("../images/icon_admin.png");
+}
+
+.footer {
+    text-align: center;
+    margin: 100px 20px 20px;
+}
+.footer p {
+    color: #CCC;
+    line-height: 25px;
+    /*--w3layouts--*/
+    /*--agileits--*/
+}
+.footer a {
+    color: #CCC;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #FFF;
+}
+
+/*-- Index-Page-Styling --*/
+
+
+
+
+
+
+
+
+
+/*--- Responsive Code ---*/
+
+
+
+
+
+#Category{
+ width:50%;
+ color: rgb(255, 255, 255);
+ text-align: center;
+ background: transparent;
+ border: transparent;
+
+}
+
+
+
+
+/*--- Responsive Code ---*/
