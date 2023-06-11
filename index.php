@@ -1,6 +1,5 @@
 <?php
 require('dbconn.php');
-
 ?>
 <?php
 include 'admin/validity.php';
@@ -43,7 +42,7 @@ include 'admin/validity.php';
 					<input type="submit" name="signin" value="Sign In">
 			
 				</form>
-				<h3>Don't have an account?<a href="register.php">Create account.</a></h3>
+				
 			</div>
 			
 			<div class="clear">
