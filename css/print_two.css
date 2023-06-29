@@ -1,0 +1,19 @@
+<style type="text/css">
+  @media print{
+    .sub{
+      display: none;
+    }
+    #search{
+      display: none;
+    }
+    .act{
+    display: none;
+    }
+    .th{
+    display: none;
+    }
+    #compute{
+      display: none;
+    }
+  }
+</style>

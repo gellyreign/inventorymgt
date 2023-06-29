@@ -1,0 +1,85 @@
+<style type="text/css">
+ 
+
+
+@media print{
+
+
+@page{
+ margin-top: 0;
+ margin-bottom: 0;
+}
+body{
+  margin-top: -60px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+
+head{
+  display: none;
+}
+
+h1{
+  display: none;
+}
+
+footer{
+  display: none;
+}
+
+.btn , .NoPrint 
+{
+    display: none;
+}
+
+.form-control
+{
+    border: 0px;
+}
+
+.input-group-text
+{
+    border: 0px;
+    background-color: white;
+}
+.card-header{
+  border: 0px;
+  text-align: center;
+}
+
+.card-body{
+  border:0px;
+}
+
+.table-secondary{
+  display: none;
+
+
+}
+.TBody{
+  display: none;
+}
+.breadcrumb-item{
+  display: none;
+}
+.sub{
+  display: none;
+}
+
+.card-body{
+  border: 0px;
+}
+.card {
+ border:0px;
+}
+.navbar-brand{
+  display: none;
+}
+.input-group{
+  margin-right: 100px;
+}
+
+
+
+}
+</style>
