@@ -1,0 +1,91 @@
+<?php
+
+require 'includes/dbcon.php';
+if(isset($_POST['search']))
+{
+	$type = $_POST['cat'];
+	$query = mysqli_query($con,"SELECT * FROM user WHERE Category = '$type' ORDER BY IDnum DESC");
+	$row=mysqli_num_rows($query);
+	if($row>0)
+	{
+		while($fetch=mysqli_fetch_array($query))
+		{ 
+
+
+			?>
+			<tr>
+				
+				<td><?php echo $fetch['fname']; ?></td>
+				<td><?php echo $fetch['lname']; ?></td>
+				<td><?php echo $fetch['mid']; ?></td>
+				<td><?php echo $fetch['Category']; ?></td>
+				<td><?php echo $fetch['uname']; ?></td>
+				
+				<td><?php echo $fetch['status']; ?>
+				<td><?php echo $fetch['date_added']; ?></td>
+					
+				</td>
+				<td> 
+
+      				<a class="nav-link" href="update_user.php?id=<?php echo $fetch['IDnum'];?>">
+      					<button type="button" class="btn">
+          				<i class="fa-solid fa-pencil" style="color: orange;"></i>
+      				</a>
+
+
+				
+					<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#deact<?php echo $fetch['IDnum'];?>">
+					 <i class="fa-solid fa-trash" style="color: red;"></i>
+					</button>				
+				</td>
+				
+			</tr>
+	<?php include 'status_user.php';?>
+			<?php
+		}
+	}
+	
+	}
+	else
+	{
+
+		$query=mysqli_query($con, "SELECT * FROM user");
+		while($fetch=mysqli_fetch_array($query))
+		{
+			?>
+			<tr>
+				
+				<td><?php echo $fetch['fname']; ?></td>
+				<td><?php echo $fetch['lname']; ?></td>
+				<td><?php echo $fetch['mid']; ?></td>
+				<td><?php echo $fetch['Category']; ?></td>
+				<td><?php echo $fetch['uname']; ?></td>
+				
+				<td><?php echo $fetch['status']; ?>
+				<td><?php echo $fetch['date_added']; ?></td>
+					
+				</td>
+				<td> 
+
+      				<a class="nav-link" href="update_user.php?id=<?php echo $fetch['IDnum'];?>">
+      					<button type="button" class="btn">
+          				<i class="fa-solid fa-pencil" style="color: orange;"></i>
+      				</a>
+
+
+				
+					<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#deact<?php echo $fetch['IDnum'];?>">
+					 <i class="fa-solid fa-trash" style="color: red;"></i>
+					</button>				
+				</td>
+				
+			</tr>
+	<?php include 'status_user.php';?>
+			
+			<?php
+		}
+	}
+?>
+
+
+
